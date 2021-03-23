@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="assets/add-user.png">
+
+    <link rel="stylesheet" href="./styleSignUp.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +26,7 @@
                 <img src="./assets/linkedin-icon.png" alt="Lindekin">
             </a>
             <a href="#">
-                <img src="./assets/github-logo.png" alt="GitHub">
+                <img src="./assets/facebook.png" alt="Facebook">
             </a>
         </section>
         <!--Division-->
@@ -33,7 +35,6 @@
         </section>
         <!--Form-->
         <form>
-            <!--A diferença é que ao clicar no label automaticamente o foco vai para o input -->
             <label for="name">
                 <span>Name</span>
                 <input type="text" name="name" id="name">
@@ -47,16 +48,28 @@
                 <input type="password" name="password" id="password">
             </label>
 
-            <button type="submit" class="signUp">Sign Up</button>
+            <a href="#" class="button" onclick="Modal.open()">Sign Up</a>
         </form>
     </main>
+
+    <!--Modal-->
+    <div class="modal-overlay">
+        <!--overlay -> A "transparencia de fundo do modal"-->
+        <!-- active -> class active - para ativar o modal -->
+        <div class="modal">
+            <img class="icon-check" src="./assets/check.png" alt="check">
+            <h1>Cadastro concluído!</h1>
+        </div>
+    </div>
+
     <!--IMAGE-->
     <section class="image">
         <img src="./assets/mobile.svg" alt="Logo">
-        <section class="circle">
-
-        </section>
+        <section class=" circle"></section>
     </section>
+
+    <script src="./script.js"></script>
 </body>
+
 
 </html>
