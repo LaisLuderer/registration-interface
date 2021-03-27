@@ -1,3 +1,3 @@
 # registration-interface
 >>
-<img src="./.github/assets/Design sem nome (1).png" />
+<img src="./assets/Design sem nome (1).png" />
